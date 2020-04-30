@@ -1,0 +1,376 @@
+body {
+  line-height: 1.15;
+  font-size: 0.5rem;
+  margin: 0;
+  padding: 0;
+  background-repeat: no-repeat;
+  background-position: 0 0 / cover;
+  background: url(../images/body-bg.png);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.viewport {
+  /* 限定大小 */
+  min-width: 1024px;
+  max-width: 1920px;
+  min-height: 780px;
+  margin: 0 auto;
+  background-size: 20%;
+  display: flex;
+  padding: 13vh 0.933rem 0;
+}
+
+/* 导航 */
+.anotherPage {
+  position: fixed;
+  width: 100%;
+  top: 7.96296vh;
+  min-width: 100%;
+  max-width: 1920px;
+  z-index: 999;
+  box-sizing: border-box;
+  padding: 0 0.933rem 2vh;
+}
+.anotherPage a {
+  float: left;
+  color: #6ce1ff;
+  font-size: 0.6rem;
+  background: rgba(14, 76, 129,.5);
+  padding: 0.4rem 1rem;
+  border-radius: 0.2rem;
+  margin-right: 0.5rem;
+}
+
+/* 页面头部 */
+.pageHeader {
+  position: fixed;
+  top: 0;
+  min-width: 100%;
+  max-width: 1920px;
+  height: 7.96296vh;
+  display: flex;
+  justify-content: space-between;
+  background: url(../images/body-bg.png);
+  z-index: 999;
+}
+.pageHeader .header-title {
+  width: 20vw;
+  height: 100%;
+  text-align: center;
+  background: url(../images/logo.png) no-repeat 0 0 / contain; 
+  background-size: auto 70%;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+.pageHeader .header-title a {
+  display: block;
+  height: 100%;
+}
+.pageHeader .header-menu {
+  height: 4.90741vh;
+  font-size: 1.57407vh;
+  background: url(../images/header-menu-bg.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  padding: 0 1.30208vw 0 2.60417vw;
+}
+.pageHeader .header-menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-top: .92593vh;
+}
+.pageHeader .header-menu li {
+  line-height: 2.22222vh;
+  padding: 0 .625vw;
+}
+.pageHeader .header-menu .on a { color: #fff; }
+.pageHeader .header-menu li a { color: #6ce1ff; }
+.pageHeader .header-menu li:hover a { color: #fff; }
+
+.column {
+  flex: 3;
+  position: relative;
+}
+
+.column:nth-child(2) {
+  flex: 4;
+  margin: 0rem 0.833rem 0;
+}
+
+.panel {
+  /* 边框 */
+  box-sizing: border-box;
+  border: 2px solid red;
+  border-image: url(../images/border.png) 51 38 21 132;
+  border-width: 2.125rem 1.583rem 0.875rem 5.5rem;
+  position: relative;
+  margin-bottom: 0.833rem;
+}
+
+.panel .inner {
+  /* 装内容 */
+  /* height: 60px; */
+  position: absolute;
+  top: -2.125rem;
+  right: -1.583rem;
+  bottom: -0.875rem;
+  left: -5.5rem;
+  padding: 1rem 1.5rem;
+}
+
+.panel h3 {
+  font-size: 0.833rem;
+  color: #fff;
+}
+
+.column {
+  flex: 3;
+  position: relative;
+}
+
+.column:nth-child(2) {
+  flex: 4;
+  margin: 0rem 0.833rem 0;
+}
+
+
+/* 双向就诊 */
+.twoWay {
+  height: 10rem;
+}
+.twoWay h3 {
+  margin-bottom: 20px;
+}
+.twoWay .person{
+  float: left;
+  width: 30%;
+}
+.twoWay .person p {
+  font-size: 0.5rem;
+  margin: 0.2rem 0;
+  color: rgb(40,200,192);
+}
+.twoWay .person span {
+  font-size: 0.7rem;
+  color: white;
+}
+.twoWay .chart {
+  width: 70%;
+  height: 100%;
+  float: left;
+}
+.twoWay .chart .bar {
+  width: 100%;
+  height: 100%;
+}
+
+
+/* 医疗服务能力 */
+.service {
+  height: 10rem;
+}
+.service .chart {
+  width: 100%;
+  height: 100%;
+}
+.service .chart .bar {
+  width: 100%;
+  height: 100%;
+}
+
+
+/* 药品管理 */
+.drugs {
+  height: 12rem;
+}
+.drugs h3 {
+  margin-bottom: 10px;
+}
+.drugs .container {
+  width: 100%;
+  height: 100%;
+}
+.drugs .wrap {
+  float: left;
+  width: 31%;
+  height: 38%;
+  background-color: rgb(2, 84, 135);
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.drugs .wrap {
+  margin-right: 12px;
+}
+.drugs .wrap:nth-child(3),.drugs .wrap:nth-child(6) {
+  margin-right: 0;
+}
+.drugs .wrap p {
+  color: rgb(26,232,211);
+  text-align: center;
+  font-size: 0.7rem;
+}
+.drugs .wrap p span {
+  color: white;
+  font-size: 0.8rem;
+  margin-top: 0.2rem;
+}
+
+/* 药品供应 */
+.drugsSupply {
+  width: 100%;
+  height: 21rem;
+}
+.drugsSupply .map {
+  float: left;
+  width: 45%;
+  height: 100%;
+}
+.drugsSupply .map .inner {
+  position: relative;
+  top: 0rem;
+  right: 0rem;
+  bottom: 0rem;
+  left: 0rem;
+  padding: 0;
+}
+.drugsSupply .map .inner,.drugsSupply .map .chart,.drugsSupply .map .geo {
+  width: 100%;
+  height: 100%;
+}
+.drugsSupply .supplyChart {
+  float: left;
+  width: 55%;
+  height: 100%;
+}
+.drugsSupply .supplyChart .chart,.drugsSupply .supplyChart .bar {
+  width: 100%;
+  height: 100%;
+}
+
+
+.hang {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* 物资耗材 */
+.material {
+  width: 49%;
+  height: 12rem;
+  float: left;
+}
+.material h3 {
+  margin-bottom: 10px;
+}
+.material .container {
+  width: 100%;
+  height: 100%;
+}
+.material .wrap {
+  float: left;
+  width: 46%;
+  height: 40%;
+  background-color: rgb(2, 84, 135);
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.material .wrap:nth-child(1),.material .wrap:nth-child(3) {
+  margin-right: 12px;
+}
+.material .wrap p {
+  color: rgb(26,232,211);
+  text-align: center;
+  font-size: 0.6rem;
+}
+.material .wrap p span {
+  color: white;
+  font-size: 0.7rem;
+  margin-top: 0.2rem;
+}
+
+/* 业务协同 */
+.coordination {
+  width: 100%;
+  height: 10rem;
+}
+.coordination .chart,.coordination .bar {
+  width: 100%;
+  height: 100%;
+}
+
+
+/* OA办公 */
+.OA {
+  width: 100%;
+  height: 10rem;
+}
+.OA .chart {
+  position: relative;
+}
+.OA .chart,.OA .bar {
+  width: 100%;
+  height: 100%;
+}
+.OA .chart p {
+  right: 0;
+  top: 0;
+  color: white;
+  position: absolute;
+}
+.OA .chart p span {
+  margin: 0 10px;
+}
+.OA .chart p span b{
+  display: inline-block;
+  width: 1rem;
+  height: 2px;
+  position: relative;
+  top: -3px;
+}
+.OA .chart p span:nth-child(1) b {
+  background-color: #ffa222;
+}
+.OA .chart p span:nth-child(2) b {
+  background-color: #5496d4;
+}
+.OA .chart p span:nth-child(3) b {
+  background-color: #edafee;
+}
+
+
+
+/* 挂号资源 */
+.register {
+  height: 12rem;
+  width: 100%;
+}
+.register .chart{
+  width: 100%;
+  height: 100%;
+}
+.register .bar1,.register .bar2 {
+  float: left;
+  width: 50%;
+  height: 100%;
+}

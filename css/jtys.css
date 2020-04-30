@@ -1,0 +1,271 @@
+body {
+  line-height: 1.15;
+  font-size: 0.5rem;
+  margin: 0;
+  padding: 0;
+  background-repeat: no-repeat;
+  background-position: 0 0 / cover;
+  background: url(../images/body-bg.png);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.viewport {
+  /* 限定大小 */
+  min-width: 1024px;
+  max-width: 1920px;
+  min-height: 780px;
+  margin: 0 auto;
+  background-size: 20%;
+  padding: 15vh 0.933rem 0;
+}
+
+/* 导航 */
+.anotherPage {
+  position: fixed;
+  width: 100%;
+  top: 7.96296vh;
+  min-width: 100%;
+  max-width: 1920px;
+  z-index: 999;
+  box-sizing: border-box;
+  padding: 0 0.933rem 2vh;
+}
+.anotherPage a {
+  float: left;
+  color: #6ce1ff;
+  font-size: 0.6rem;
+  background: rgba(14, 76, 129,.5);
+  padding: 0.4rem 1rem;
+  border-radius: 0.2rem;
+  margin-right: 0.5rem;
+}
+
+/* 页面头部 */
+.pageHeader {
+  position: fixed;
+  top: 0;
+  min-width: 100%;
+  max-width: 1920px;
+  height: 7.96296vh;
+  display: flex;
+  justify-content: space-between;
+  background: url(../images/body-bg.png);
+  z-index: 999;
+}
+.pageHeader .header-title {
+  width: 20vw;
+  height: 100%;
+  text-align: center;
+  background: url(../images/logo.png) no-repeat 0 0 / contain; 
+  background-size: auto 70%;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+.pageHeader .header-title a {
+  display: block;
+  height: 100%;
+}
+.pageHeader .header-menu {
+  height: 4.90741vh;
+  font-size: 1.57407vh;
+  background: url(../images/header-menu-bg.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  padding: 0 1.30208vw 0 2.60417vw;
+}
+.pageHeader .header-menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-top: .92593vh;
+}
+.pageHeader .header-menu li {
+  line-height: 2.22222vh;
+  padding: 0 .625vw;
+}
+.pageHeader .header-menu .on a { color: #fff; }
+.pageHeader .header-menu li a { color: #6ce1ff; }
+.pageHeader .header-menu li:hover a { color: #fff; }
+
+.panel {
+  /* 边框 */
+  box-sizing: border-box;
+  border: 2px solid red;
+  border-image: url(../images/border.png) 51 38 21 132;
+  border-width: 2.125rem 1.583rem 0.875rem 5.5rem;
+  position: relative;
+  margin-bottom: 0.833rem;
+}
+
+.panel .inner {
+  /* 装内容 */
+  /* height: 60px; */
+  position: absolute;
+  top: -2.125rem;
+  right: -1.583rem;
+  bottom: -0.875rem;
+  left: -5.5rem;
+  padding: 1rem 1.5rem;
+}
+.panel h3 {
+  font-size: 0.833rem;
+  color: #fff;
+}
+.panel .chart{
+  flex: 1;
+  height: 100%;
+}
+
+.line {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+
+/* 用户量统计 */
+.user {
+  width: 27%;
+  height: 15rem;
+}
+.user .container {
+  width: 100%;
+  height: 100%;
+}
+.user h3 {
+  margin-bottom: 20px;
+}
+.user .wrap {
+  float: left;
+  width: 48%;
+  height: 40%;
+  background-color: rgb(2, 84, 135);
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.user .wrap:nth-child(1),.user .wrap:nth-child(3) {
+  margin-right: 10px;
+}
+.user .wrap p {
+  color: rgb(26,232,211);
+  text-align: center;
+  font-size: 0.6rem;
+}
+.user .wrap p span {
+  color: white;
+  font-size: 1rem;
+}
+
+/* 应用访问趋势 */
+.statistics {
+  width: 25%;
+  height: 15rem;;
+}
+.statistics .chart .bar{
+  width: 100%;
+  height: 100%;
+}
+
+/* 签约质量分析 */
+.analysis {
+  width: 45%;
+  height: 15rem;;
+}
+.analysis .chart {
+  position: relative;
+}
+.analysis .chart .bar{
+  width: 100%;
+  height: 100%;
+}
+.analysis .chart p {
+  right: 0;
+  top: 5%;
+  color: white;
+  position: absolute;
+}
+.analysis .chart p span {
+  margin: 0 10px;
+}
+.analysis .chart p span b{
+  display: inline-block;
+  width: 1rem;
+  height: 2px;
+  position: relative;
+  top: -3px;
+}
+.analysis .chart p span:nth-child(1) b {
+  background-color: #ffa222;
+}
+.analysis .chart p span:nth-child(2) b {
+  background-color: #5496d4;
+}
+.analysis .chart p span:nth-child(3) b {
+  background-color: #edafee;
+}
+
+
+/* 公共卫生服务 */
+.hygiene {
+  width: 28%;
+  height: 15rem;
+}
+.hygiene .container {
+  width: 100%;
+  height: 100%;
+}
+.hygiene h3 {
+  margin-bottom: 20px;
+}
+.hygiene .wrap {
+  float: left;
+  width: 48%;
+  height: 40%;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hygiene .wrap:nth-child(1),.hygiene .wrap:nth-child(3) {
+  margin-right: 10px;
+}
+
+/* 重点人群档案管理情况 */
+.crowd {
+  width: 32%;
+  height: 15rem;
+}
+.crowd .chart .bar{
+  width: 100%;
+  height: 100%;
+}
+
+/* 基本医疗服务 */
+.service {
+  width: 39%;
+  height: 15rem;
+}
+.service .chart .bar{
+  width: 100%;
+  height: 100%;
+}

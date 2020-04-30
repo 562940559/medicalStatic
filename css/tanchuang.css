@@ -1,0 +1,115 @@
+.zhuti {
+  position: absolute;
+  z-index: 3;
+  font-size: 14px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px white;
+  overflow: hidden;
+  color: #333;
+  background: url('../images/tcBg.png') no-repeat;
+  background-size: 100% 100%;
+}
+
+.title {
+  vertical-align: middle;
+  height: 4rem;
+  width: 100%;
+  text-align: center;
+  line-height: 6rem;
+  font-size: 1rem;
+  color: white;
+}
+
+.close {
+  float: right;
+  width: 50px;
+  height: 35px;
+  font-weight: bold;
+  line-height: 35px;
+  vertical-align: middle;
+  color: white;
+  font-size: 18px;
+}
+
+.close:hover {
+  cursor: pointer;
+}
+
+.content {
+  padding-top: 10px;
+}
+
+.inputLine {
+  width: 100%;
+  height: 40px;
+  box-sizing: border-box;
+  padding: 0 50px;
+}
+
+.inputLine select {
+  width: 120px;
+  height: 40px;
+  box-sizing: border-box;
+  padding: 0 10px;
+  border: none;
+  color: #fff;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  background: url('../images/selectBg.png') no-repeat;
+  background-size: 100% 100%;
+  margin-right: 10px;
+}
+
+.inputLine input{
+  width: 160px;
+  height: 40px;
+  box-sizing: border-box;
+  padding: 0 10px;
+  border: none;
+  background: url('../images/inputBg.png') no-repeat;
+  background-size: 100% 100%;
+  margin-left: 90px;
+}
+.inputLine span {
+  display: inline-block;
+  width: 60px;
+  height: 40px;
+  background-color: rgb(1,100,185);
+  color: white;
+  text-align: center;
+  line-height: 40px;
+  position: relative;
+  cursor: pointer;
+}
+
+.tableTitle {
+  width: 100%;
+}
+.tableTitle ul li {
+  float: left;
+  color: rgb(109,228,255);
+  height: 40px;
+  font-size: 16px;
+  line-height: 40px;
+  background-color: rgba(5,71,129,.5);
+  text-align: center;
+}
+.tableTitle ul li:nth-child(1) {
+  width: 80px;
+}
+.tableTitle ul li:nth-child(2) {
+  width: 80px;
+}
+.tableTitle ul li:nth-child(3) {
+  width: 200px;
+}
+.tableTitle ul li:nth-child(4) {
+  width: 140px;
+}
+.tableTitle ul li:nth-child(5) {
+  width: 100px;
+}
+.tableTitle ul li:nth-child(6) {
+  width: 200px;
+}
